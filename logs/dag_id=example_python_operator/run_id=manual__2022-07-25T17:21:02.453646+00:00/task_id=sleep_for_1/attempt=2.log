@@ -1,0 +1,23 @@
+[2022-07-25 14:24:24,783] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: example_python_operator.sleep_for_1 manual__2022-07-25T17:21:02.453646+00:00 [queued]>
+[2022-07-25 14:24:24,788] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: example_python_operator.sleep_for_1 manual__2022-07-25T17:21:02.453646+00:00 [queued]>
+[2022-07-25 14:24:24,789] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-25 14:24:24,789] {taskinstance.py:1377} INFO - Starting attempt 2 of 2
+[2022-07-25 14:24:24,789] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-25 14:24:24,797] {taskinstance.py:1397} INFO - Executing <Task(_PythonDecoratedOperator): sleep_for_1> on 2022-07-25 17:21:02.453646+00:00
+[2022-07-25 14:24:24,800] {standard_task_runner.py:52} INFO - Started process 5986 to run task
+[2022-07-25 14:24:24,803] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'example_python_operator', 'sleep_for_1', 'manual__2022-07-25T17:21:02.453646+00:00', '--job-id', '10', '--raw', '--subdir', '/home/renan/Documents/alura/datapipeline/.env/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py', '--cfg-path', '/tmp/tmp7za65tap', '--error-file', '/tmp/tmp9ey3wysn']
+[2022-07-25 14:24:24,804] {standard_task_runner.py:80} INFO - Job 10: Subtask sleep_for_1
+[2022-07-25 14:24:24,848] {task_command.py:371} INFO - Running <TaskInstance: example_python_operator.sleep_for_1 manual__2022-07-25T17:21:02.453646+00:00 [running]> on host renan-virtual-machine
+[2022-07-25 14:24:24,899] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=example_python_operator
+AIRFLOW_CTX_TASK_ID=sleep_for_1
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-25T17:21:02.453646+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-25T17:21:02.453646+00:00
+[2022-07-25 14:24:25,000] {python.py:173} INFO - Done. Returned value was: None
+[2022-07-25 14:24:25,005] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=example_python_operator, task_id=sleep_for_1, execution_date=20220725T172102, start_date=20220725T172424, end_date=20220725T172425
+[2022-07-25 14:24:25,018] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-25 14:24:25,031] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
